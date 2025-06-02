@@ -1,0 +1,15 @@
+let text = " sandhya";
+console.log(text.length);
+console.log(text.toLowerCase()cd );
+console.log(text.charAt(7));
+console.log(text.charAt(8));
+console.log(text.charAt(0));
+console.log(text.length - 1);
+console.log(text.indexOf("a"));
+console.log(text.indexOf(" "));
+console.log(text.indexOf("S"));
+console.log(text.trim());
+console.log(text.startsWith("san"));
+console.log(text.includes("san"));
+console.log(text.slice(0, 3));
+console.log(text.slice(-1));
