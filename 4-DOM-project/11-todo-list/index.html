@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Simple Todo App | DOM Projects</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-text">
+          <div class="header-title">TO DO</div>
+          <div class="clear"><i title="Reset" class="fa fa-refresh"></i></div>
+        </div>
+        <div class="time-date">
+          <h3 id="time"></h3>
+          <h3 id="date"></h3>
+        </div>
+      </div>
+      <div class="content">
+        <h2 class="todos-watermark">TODOS</h2>
+        <ul id="list"></ul>
+      </div>
+      <div class="add-item">
+        <i class="fa fa-plus-circle add" aria-hidden="true"></i>
+        <input type="text" placeholder="Add a todo" id="todo-input" />
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+      integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+      data-cf-beacon='{"rayId":"952cb4c758d7e5d4","version":"2025.6.2","r":1,"token":"3ba8f37ce05e4d228381456ea5b5b168","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}'
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
