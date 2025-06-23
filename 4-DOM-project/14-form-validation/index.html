@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form Validation</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome CDN for the success/error icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Main Form Page -->
+      <div id="main-page">
+        <div class="header">
+          <h2>Create Account</h2>
+        </div>
+        <form class="form" id="form">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              placeholder="Enter your username"
+              autocomplete="off"
+            />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              autocomplete="off"
+            />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter password"
+              autocomplete="off"
+            />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+
+          <div class="form-group">
+            <label for="retypepass">Confirm Password</label>
+            <input
+              type="password"
+              id="retypepass"
+              placeholder="Confirm your password"
+              autocomplete="off"
+            />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+          <button type="submit" class="btn" id="submit-btn">Register</button>
+        </form>
+      </div>
+
+      <!-- Success Message Page -->
+      <div id="submitted-msg">
+        <div class="submit-msg-inner">
+          <h3>Thank You!</h3>
+          <p>
+            Your form has been submitted successfully,
+            <span id="msg-name"></span>!
+          </p>
+          <button class="preview-btn" onclick="previewForm()">
+            Go Back to Form
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js" defer></script>
+  </body>
+</html>
