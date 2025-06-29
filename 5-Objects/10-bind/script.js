@@ -1,19 +1,23 @@
-class Account {
-  constructor(name, balance) {
-    this.name = name;
-    this.balance = balance;
-  }
-  bank = "Nabil";
-  deposite(amount) {
-    this.balance += amount;
-    console.log(`${this.balance}`);
-  }
+const john = {
+  name: "john",
+  age: 24,
+};
+const susan = {
+  name: "susan",
+  age: 21,
+};
+
+function greet(city, country) {
+  console.log(this);
+  console.log(
+    `Hello, I'm ${this.name} and I'm ${this.age} years old and I live in ${city}, ${country}`
+  );
 }
 
-const mini = new Account("mini", 20);
-const fizz = new Account("fizz", 200);
-console.log(mini.name);
-console.log(mini.bank);
-console.log(fizz.bank);
-fizz.deposite(50);
-mini.deposite(50);
+console.log("---Bind---");
+// No output
+greet.bind(john, "san diego", "us");
+
+// Assign & Use later
+const susanGreet = greet.bind(susan, "san diego", "us");
+susanGreet();

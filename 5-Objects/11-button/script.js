@@ -1,19 +1,15 @@
-class Account {
-  constructor(name, balance) {
-    this.name = name;
-    this.balance = balance;
-  }
-  bank = "Nabil";
-  deposite(amount) {
-    this.balance += amount;
-    console.log(`${this.balance}`);
-  }
-}
+const btn = document.querySelector(".increment");
+const counter = {
+  count: 0,
+  increment() {
+    this.count++;
+    console.log(this);
+    console.log(this.count);
+  },
+};
 
-const mini = new Account("mini", 20);
-const fizz = new Account("fizz", 200);
-console.log(mini.name);
-console.log(mini.bank);
-console.log(fizz.bank);
-fizz.deposite(50);
-mini.deposite(50);
+// Results NaN
+// btn.addEventListener("click", counter.increment);
+
+const increment = counter.increment.bind(counter);
+btn.addEventListener("click", increment);

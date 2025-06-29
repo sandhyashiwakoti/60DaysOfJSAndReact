@@ -1,19 +1,31 @@
-class Account {
-  constructor(name, balance) {
-    this.name = name;
-    this.balance = balance;
-  }
-  bank = "Nabil";
-  deposite(amount) {
-    this.balance += amount;
-    console.log(`${this.balance}`);
-  }
-}
+const john = {
+  name: "john",
+  age: 24,
+  greet: function () {
+    console.log(this);
+    console.log(`Hello, I'm ${this.name} and I'm ${this.age} years old`);
+  },
+};
+const susan = {
+  name: "susan",
+  age: 21,
+};
 
-const mini = new Account("mini", 20);
-const fizz = new Account("fizz", 200);
-console.log(mini.name);
-console.log(mini.bank);
-console.log(fizz.bank);
-fizz.deposite(50);
-mini.deposite(50);
+john.greet();
+
+function greet() {
+  console.log(this);
+  console.log(`Hello, I'm ${this.name} and I'm ${this.age}years old`);
+}
+// this will fail
+// susan.greet();
+
+greet();
+
+const secondGreet = john.greet;
+secondGreet();
+
+greet.call(john);
+greet.call(susan);
+greet.call({ name: "peter", age: 30 });
+john.greet.call(susan);
