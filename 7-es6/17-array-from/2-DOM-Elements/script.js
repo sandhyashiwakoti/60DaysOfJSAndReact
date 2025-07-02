@@ -3,7 +3,7 @@ const result = document.getElementById("result");
 const second = document.getElementById("second");
 
 let newText = Array.from(p);
-newText = newText.map((item) => "<span>${item. textContent}</span>").join(" ");
+newText = newText.map((item) => `<span>${item.textContent}</span>`).join(" ");
 
 result.innerHTML = newText;
 
