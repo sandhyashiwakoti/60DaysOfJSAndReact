@@ -1,0 +1,25 @@
+/* Add these new styles to your existing index.css */
+
+.user-card {
+  text-align: left;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.user-card h2 {
+  margin-top: 0;
+  color: #007bff;
+}
+
+.user-card p {
+  line-height: 1.6;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.error-text {
+  color: #dc3545;
+  font-weight: bold;
+}
