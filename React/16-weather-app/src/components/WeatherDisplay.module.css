@@ -1,0 +1,54 @@
+.weatherCard {
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cityName {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.description {
+  margin: 5px 0 20px 0;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: #555;
+}
+
+.temperature {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.details {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.loadingText,
+.errorText {
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.errorText {
+  color: #ffdddd;
+}
