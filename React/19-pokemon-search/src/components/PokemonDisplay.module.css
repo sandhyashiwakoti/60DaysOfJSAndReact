@@ -1,0 +1,76 @@
+.displayContainer {
+  margin-top: 30px;
+  min-height: 350px; /* Reserve space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokedexScreen {
+  background: #dedede;
+  border: 20px solid #a4a4a4;
+  border-radius: 10px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.pokemonImage {
+  width: 150px;
+  height: 150px;
+  image-rendering: pixelated; /* Makes the pixel art sharp */
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.pokemonName {
+  margin: 10px 0;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.typesContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.typeBadge {
+  padding: 5px 15px;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.statsContainer {
+  font-size: 1.1rem;
+}
+
+.welcomeText,
+.loadingText,
+.errorText {
+  color: #444;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.errorText {
+  color: #e63946;
+  font-weight: bold;
+}
