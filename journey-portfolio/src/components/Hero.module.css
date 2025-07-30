@@ -1,0 +1,71 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.title {
+  font-size: 4rem;
+  margin: 0;
+  color: var(--accent-color);
+  animation: fadeInDown 1s ease-out;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin: 10px 0 30px 0;
+  font-weight: 300;
+  animation: fadeInUp 1s ease-out 0.5s;
+  animation-fill-mode: backwards; /* Start invisible */
+}
+
+.scrollIndicator {
+  position: absolute;
+  bottom: 30px;
+  font-size: 1rem;
+  animation: bounce 2s infinite;
+  cursor: pointer; /* <-- ADD THIS LINE */
+  user-select: none; /* Optional: prevents text selection on click */
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}

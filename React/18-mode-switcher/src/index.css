@@ -1,0 +1,61 @@
+/* We use CSS variables for easy theming */
+:root {
+  --bg-light: #ffffff;
+  --text-light: #212529;
+  --bg-dark: #212529;
+  --text-dark: #f8f9fa;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light Theme Styles */
+.app-container.light {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+/* Dark Theme Styles */
+.app-container.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dee2e6;
+}
+.dark header {
+  border-bottom: 1px solid #495057;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #007bff;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.dark button {
+  background-color: #f8f9fa;
+  color: #212529;
+  border: 1px solid #f8f9fa;
+}
