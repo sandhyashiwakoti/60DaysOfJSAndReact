@@ -2,6 +2,9 @@
 
 This repository documents my progress and projects from the #60DaysOfLearning2025 challenge hosted by Leapfrog. Over 60 days, I focused on building a strong foundation in vanilla JavaScript and then moved on to building applications with React.
 
+## Certificate
+![Leapfrog 60DaysOfLearning2025 Certificate](./certificate.png)
+
 ## Project Highlights
 
 Here are a few of the key projects I built during this challenge.
@@ -24,3 +27,9 @@ Here are a few of the key projects I built during this challenge.
 
 ---
 You can explore the `JavaScript` and `React` folders to see all the daily exercises and smaller projects.
+
+## Skills Practiced
+- Vanilla JavaScript (ES6+, DOM manipulation, Fetch API, Async/Await)
+- React (Components, Props, State, Hooks, React Router)
+- API Integration
+- CRUD operations
