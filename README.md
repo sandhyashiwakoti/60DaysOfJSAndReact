@@ -25,11 +25,11 @@ Here are a few of the key projects I built during this challenge.
 *   **Description:** A simple blogging interface to practice CRUD (Create, Read, Update, Delete) operations.
 *   **Technologies Used:** React, State Management (useState, useEffect)
 
----
-You can explore the `JavaScript` and `React` folders to see all the daily exercises and smaller projects.
-
 ## Skills Practiced
 - Vanilla JavaScript (ES6+, DOM manipulation, Fetch API, Async/Await)
 - React (Components, Props, State, Hooks, React Router)
 - API Integration
 - CRUD operations
+
+---
+You can explore the `JavaScript` and `React` folders to see all the daily exercises and smaller projects.
